@@ -729,7 +729,7 @@ if __name__ == "__main__":
         args.modalties = len(args.dims)
         if args.dataset == 'dr2':
             from DR_2.fusion_net import IMDR
-            model = IMDR(args.num_classes+2, args.modal_number, args.dims, args)
+            model = IMDR(args.num_classes, args.modal_number, args.dims, args)
         elif args.dataset == 'glu2':
             from glu2.fusion_net import IMDR
             model = IMDR(args.num_classes, args.modal_number, args.dims, args)
